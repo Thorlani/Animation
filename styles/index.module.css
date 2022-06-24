@@ -19,6 +19,10 @@
         position: relative;
         z-index: 999;
     }
+
+    .sectionTextTwo {
+        display: none;
+    }
     
     .h1 {
         font-family: 'Galano', sans-serif;
@@ -276,6 +280,10 @@
         position: relative;
         z-index: 999;
     }
+
+    .sectionTextTwo {
+        display: none;
+    }
     
     .h1 {
         font-family: 'Galano', sans-serif;
@@ -527,6 +535,9 @@
         grid-template-rows: 115px;
         margin-top: 25px;
     }
+    .sectionTextTwo {
+        display: none;
+    }
     .trustUs {
         height: 604px;
         background: #FFFFFF;
@@ -557,6 +568,9 @@
     .sectionText {
         width: 100%;
         text-align: center;
+    }
+    .sectionTextTwo {
+        display: none;
     }
     .sectionImage {
         width: 100%;
@@ -618,6 +632,12 @@
         display: none;
     }
     .sectionText {
+        display: none;
+        /* width: 100%;
+        text-align: center; */
+    }
+    .sectionTextTwo {
+        display: block;
         width: 100%;
         text-align: center;
     }
@@ -733,6 +753,12 @@
         display: none;
     }
     .sectionText {
+        display: none;
+        /* width: 100%;
+        text-align: center; */
+    }
+    .sectionTextTwo {
+        display: block;
         width: 100%;
         text-align: center;
     }
@@ -830,6 +856,12 @@
         display: none;
     }
     .sectionText {
+        display: none;
+        /* width: 100%;
+        text-align: center; */
+    }
+    .sectionTextTwo {
+        display: block;
         width: 100%;
         text-align: center;
     }

@@ -68,8 +68,8 @@ export default function Home() {
       boxVariants = {
         hidden: {
           scale: .4,
-          opacity: 1,
-          x: `-100%`
+          opacity: 0,
+          x: -200
         },
         visible: {
           scale: 1,
@@ -108,6 +108,12 @@ export default function Home() {
                 <button className={styles.button} onClick={onRequest}>REQUEST A CALL</button>
                 {save === true ? popUp : <Submitted saved={onClose} />}
                 </motion.div>
+            </div>
+            <div className={styles.sectionTextTwo}>
+              <h1 className={styles.h1}>Health Insurance that makes sense</h1>
+              <p className={styles.paragraph}>Insurance means more money in your pocket. Insurance equals smart. Get insurance products that puts you at ease and incharge.</p>
+              <button className={styles.button} onClick={onRequest}>REQUEST A CALL</button>
+              {save === true ? popUp : <Submitted saved={onClose} />}
             </div>
             <div className={styles.sectionImage}>
               <motion.div initial='hidden' animate='visible' variants={{
