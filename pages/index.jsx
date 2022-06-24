@@ -57,8 +57,31 @@ export default function Home() {
       Aos.init({duration: 1000})
     },[])
 
+    const [width, setWidth] = useState(0)
+    useEffect(() => {
+      setWidth(window.innerWidth < 768)
+    })
 
 
+    let boxVariants = {};
+    if (!width) {
+      boxVariants = {
+        hidden: {
+          scale: .4,
+          opacity: 1,
+          x: `-100%`
+        },
+        visible: {
+          scale: 1,
+          opacity: 1,
+          x: 0,
+          transition: {
+            delay: .4,
+            duration: 1
+          },
+        }
+      };
+    }
 
   return (
     <>
@@ -79,22 +102,7 @@ export default function Home() {
         <div className={styles.heroSection}>
           <div className={styles.firstPart}>
             <div className={styles.sectionText}>
-              <motion.div initial='hidden' animate={'visible'} variants={{
-                hidden: {
-                  scale: .4,
-                  opacity: 0,
-                  x: -200
-                },
-                visible: {
-                  scale: 1,
-                  opacity: 1,
-                  x: 0,
-                  transition: {
-                    delay: .4,
-                    duration: 1
-                  },
-                }
-              }}>
+              <motion.div initial='hidden' animate={'visible'} variants={boxVariants}>
                 <h1 className={styles.h1}>Health Insurance that makes sense</h1>
                 <p className={styles.paragraph}>Insurance means more money in your pocket. Insurance equals smart. Get insurance products that puts you at ease and incharge.</p>
                 <button className={styles.button} onClick={onRequest}>REQUEST A CALL</button>
@@ -102,7 +110,7 @@ export default function Home() {
                 </motion.div>
             </div>
             <div className={styles.sectionImage}>
-              <motion.div initial='hidden' animate={'visible'} variants={{
+              <motion.div initial='hidden' animate='visible' variants={{
                 hidden: {
                   scale: .4,
                   opacity: 0,
