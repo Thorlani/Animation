@@ -57,6 +57,9 @@ export default function Home() {
       Aos.init({duration: 1000})
     },[])
 
+
+
+
   return (
     <>
     <Head>
@@ -91,7 +94,7 @@ export default function Home() {
                     duration: 1
                   },
                 }
-                }}>
+              }}>
                 <h1 className={styles.h1}>Health Insurance that makes sense</h1>
                 <p className={styles.paragraph}>Insurance means more money in your pocket. Insurance equals smart. Get insurance products that puts you at ease and incharge.</p>
                 <button className={styles.button} onClick={onRequest}>REQUEST A CALL</button>
