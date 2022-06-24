@@ -36,6 +36,7 @@
         text-align: center;
         letter-spacing: 0.5px;
         color: #808080;
+        position: relative;
     }
 
     .listItemsActive {
@@ -47,17 +48,16 @@
         list-style: none;
     }
 
-    .listItemsActive:hover {
-        width: 180px;
-        padding: 0px 25px 5px;
-        border: 2px solid #65A999;
-        border-top: none;
-        border-left: none;
-        border-right: none;
-        margin-right: 57px;
-        font-family: 'Galano', sans-serif;
-        font-style: normal;
-        list-style: none;
+    .listItemsActive:hover::after {
+        content: "";
+        width: 80px;
+        height: 3px;
+        position: absolute;
+        bottom: -10px;
+        left: 11%;
+        background-color: #65A999;
+        border-radius: 20px;
+        transform: translate(-50%, 0rem)
     }
 
     .listItemsAbout {
@@ -68,12 +68,16 @@
         list-style: none;
     }
 
-    .listItemsAbout:hover {
-        padding: 0px 10px 5px;
-        border-bottom: 2px solid #65A999;
-        font-family: 'Galano', sans-serif;
-        font-style: normal;
-        list-style: none;
+    .listItemsAbout:hover::after {
+        content: "";
+        width: 100px;
+        height: 3px;
+        position: absolute;
+        bottom: -10px;
+        left: 44%;
+        background-color: #65A999;
+        border-radius: 20px;
+        transform: translate(-50%, 0rem)
     }
 
     .listItemsContact {
@@ -84,12 +88,16 @@
         list-style: none;
     }
 
-    .listItemsContact:hover {
-        padding: 0px 10px 5px;
-        border-bottom: 2px solid #65A999;
-        font-family: 'Galano', sans-serif;
-        font-style: normal;
-        list-style: none;
+    .listItemsContact:hover::after {
+        content: "";
+        width: 110px;
+        height: 3px;
+        position: absolute;
+        bottom: -10px;
+        left: 76.5%;
+        background-color: #65A999;
+        border-radius: 20px;
+        transform: translate(-50%, 0rem)
     }
 
     .menuIcon {
@@ -176,6 +184,7 @@
         text-align: center;
         letter-spacing: 0.5px;
         color: #808080;
+        position: relative;
     }
 
     .listItemsActive {
@@ -186,17 +195,17 @@
         font-style: normal;
         list-style: none;
     }
-    .listItemsActive:hover {
-        width: 180px;
-        padding: 0px 25px 5px;
-        border: 2px solid #65A999;
-        border-top: none;
-        border-left: none;
-        border-right: none;
-        margin-right: 57px;
-        font-family: 'Galano', sans-serif;
-        font-style: normal;
-        list-style: none;
+
+    .listItemsActive:hover::after {
+        content: "";
+        width: 80px;
+        height: 3px;
+        position: absolute;
+        bottom: -10px;
+        left: 11%;
+        background-color: #65A999;
+        border-radius: 20px;
+        transform: translate(-50%, 0rem)
     }
 
     .listItemsAbout {
@@ -207,12 +216,16 @@
         list-style: none;
     }
 
-    .listItemsAbout:hover {
-        padding: 0px 10px 5px;
-        border-bottom: 2px solid #65A999;
-        font-family: 'Galano', sans-serif;
-        font-style: normal;
-        list-style: none;
+    .listItemsAbout:hover::after {
+        content: "";
+        width: 100px;
+        height: 3px;
+        position: absolute;
+        bottom: -10px;
+        left: 44%;
+        background-color: #65A999;
+        border-radius: 20px;
+        transform: translate(-50%, 0rem)
     }
 
     .listItemsContact {
@@ -223,12 +236,16 @@
         list-style: none;
     }
 
-    .listItemsContact:hover {
-        padding: 0px 10px 5px;
-        border-bottom: 2px solid #65A999;
-        font-family: 'Galano', sans-serif;
-        font-style: normal;
-        list-style: none;
+    .listItemsContact:hover::after {
+        content: "";
+        width: 110px;
+        height: 3px;
+        position: absolute;
+        bottom: -10px;
+        left: 76.5%;
+        background-color: #65A999;
+        border-radius: 20px;
+        transform: translate(-50%, 0rem)
     }
 
     .menuIcon {

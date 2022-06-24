@@ -147,6 +147,7 @@
     .offer {
         background: #FFF9EE;
         padding: 98px 500px;
+        overflow-x: hidden;
     }
     .whatWeOffer {
         font-family: 'Galano', sans-serif;
@@ -262,6 +263,7 @@
         padding: 86px 97px 0px 97px;
         background: #DDFFDA;
         overflow-y: hidden;
+        overflow-x: hidden;
     }
     
     .firstPart {
@@ -402,6 +404,7 @@
     .offer {
         background: #FFF9EE;
         padding: 98px 97px;
+        overflow-x: hidden;
     }
     .whatWeOffer {
         font-family: 'Galano', sans-serif;
@@ -516,6 +519,7 @@
         width: 1024px;
         height: 850px;
         padding: 86px 17px 0px 17px;
+        overflow-x: hidden;
     }
     .secondPart {
         grid-template-columns: repeat(3, 1fr);
@@ -534,6 +538,7 @@
     .offer {
         width: 1024px;
         padding: 98px 17px;
+        overflow-x: hidden;
     }
 }
 
@@ -542,6 +547,7 @@
         width: 768px;
         height: 1260px;
         padding: 86px 17px 0px 17px;
+        overflow-x: hidden;
     }
     .firstPart {
         width: 100%;
@@ -592,6 +598,7 @@
     .offer {
         width: 768px;
         padding: 58px 17px;
+        overflow-x: hidden;
     }
 }
 
@@ -600,6 +607,7 @@
         width: 425px;
         height: 730px;
         padding: 100px 57px 56px 28px;
+        overflow-x: hidden;
     }
     .firstPart {
         width: 100%;
@@ -691,6 +699,7 @@
     }
     .offer{
         width: 425px;
+        overflow-x: hidden;
     }
     .whatWeOffer {
         text-align: center;
@@ -713,6 +722,7 @@
         width: 375px;
         height: 730px;
         padding: 89px 57px 56px 28px;
+        overflow-x: hidden;
     }
     .firstPart {
         width: 100%;
@@ -800,6 +810,7 @@
     }
     .offer{
         width: 375px;
+        overflow-x: hidden;
     }
 }
 
@@ -808,6 +819,7 @@
         width: 320px;
         height: 690px;
         padding: 49px 28px 56px 28px;
+        overflow-x: hidden;
     }
     .firstPart {
         width: 100%;
@@ -897,5 +909,6 @@
     }
     .offer{
         width: 320px;
+        overflow-x: hidden;
     }
 }
